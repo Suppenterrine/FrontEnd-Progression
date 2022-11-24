@@ -108,6 +108,16 @@ body {
     opacity: 1;
 }
 
+#repo {
+    text-decoration: none;
+    color: var(--main-bg-color);
+    transition: color 200ms ease;
+}
+
+#repo:hover {
+    color: #f92f60;
+}
+
 p>a {
     text-decoration: none;
 }
