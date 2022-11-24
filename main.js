@@ -24,15 +24,5 @@ Array.from(document.getElementsByClassName("menu-item"))
 
             elBefore = document.querySelector(`[data-id="${indexBefore.shift()}"]`);
             elBefore.style.setProperty("display", "none");
-
-            // console.log("indexBefore", indexBefore, "index",index);
         }
     });
-
-
-// Array.from(document.getElementsByClassName("menu-item"))
-//     .forEach((item, index) => {
-//         item.onmouseover = () => {
-//             menu.dataset.activeIndex = index;
-//         }
-//     });
