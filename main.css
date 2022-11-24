@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: rgb(20, 20, 20);
-    --bg-size: 5vmin 5vmin;
-    --bg-size-hover: 6vmin 6vmin;
+    --bg-size: 8vmin 8vmin;
+    --bg-size-hover: 9vmin 9vmin;
 }
 
 body {
@@ -69,7 +69,7 @@ body {
         circle,
         rgba(35, 104, 153, 0.3) 9%,
         transparent 9%); */
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect width='4' height='4' rx='4' transform='rotate(45) translate(40 0)' fill='rgba(255, 255, 255, 0.1)'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect width='6' height='6' rx='6' transform='rotate(45) translate(40 0)' fill='rgba(255, 255, 255, 0.1)'/></svg>");
     transition:
         /* opacity 800ms ease, */
         background-size 800ms ease,
@@ -96,7 +96,7 @@ body {
 
 #menu-items:hover~#menu-background-pattern {
     background-size: var(--bg-size-hover);
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect width='4' height='4' transform='rotate(45) translate(40 0)' fill='rgba(255, 255, 255, 0.1)'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect width='6' height='6' transform='rotate(45) translate(40 0)' fill='rgba(255, 255, 255, 0.1)'/></svg>");
     /* opacity: 0.2; */
 }
 
@@ -129,7 +129,8 @@ p>a {
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>⭕</text></svg>"), auto;
     transition: opacity 400ms ease;
 }
 
